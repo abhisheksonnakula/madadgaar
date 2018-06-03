@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<title>Madadgaar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://www.hdbilder.eu/pictures/2014/0419/1/macbook-pro-retina-display-wallpaper-61485.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 100px;
+    margin: -200px 100px 0px 100px;
+    
+}
+
+span.psw {
+    float: center;
+    padding-top: 16px;
+    margin: 0px 0px 0px 220px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">MADADGAAR</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#login" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REGISTER</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters </span><br>
+    <span class="w3-large">IDEATE , EXPLORE & CREATE</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE ORGANISATION</h3>
+  <p class="w3-center w3-large">Key features of our organisation</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Own workspace</p>
+      <p>The platform to kickstart your own startUp.</p>
+    </div>
+    <div class="w3-quarter">
+            <i class="fa fa-bullhorn" style="font-size:76px"></i>
+                  <p class="w3-large">Passion</p>
+      <p>passionate people unite and create their own workspace.</p>
+    </div>
+    <div class="w3-quarter">
+            <i class="fa fa-search" style="font-size:76px"></i>
+                  <p class="w3-large">Explore</p>
+      <p>Join community which is willing to work with you.</p>
+    </div>
+    <div class="w3-quarter">
+            <i class="fa fa-handshake-o" style="font-size:76px"></i>
+            <p class="w3-large">Ngo's</p>
+      <p>Common platform for Ngo's.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--login-->
+<div class="container" id="login">
+<h2 >Login Form </h2>
+
+<form action="/home/bhanuteja/Desktop/madadgaar1/profile.html" style="border:1px solid #ccc >
+  
+
+  
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+   <button type="submit">Login</button></a>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  <br>
+<a href="">forgot password?</a>
+  <div >
+  </div>
+</div>
+</form>
+<br><br><br><br><br><br>
+<!--register-->
+
+
+<div class="container" style="padding: 90px 90px 90px 90px" id="work">
+    <h2 >REGISTER </h2>
+<div class="w3-container" style="padding:-220px 128px 16px,margin = 100px 100px 100px 100px" id="work">
+  
+  <form action="/action_page.php" style="border:1px solid #ccc">
+    
+    
+      <h3>Please fill in this form to create an account.</h3>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Register</button>
+      </div>
+    </div>
+  </form>
+  
+  </div>
+
+
+<!--contact us-->
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px 100px 100px" id="contact">
+    <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Hyderabad, India</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9999999999</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: helpdesk@madadgaar.org</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
