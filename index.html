@@ -1,357 +1,843 @@
 <!DOCTYPE html>
-<html>
-<title>Madadgaar</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-}
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-.bgimg-1 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("http://www.hdbilder.eu/pictures/2014/0419/1/macbook-pro-retina-display-wallpaper-61485.jpg");
-    min-height: 100%;
-}
-.w3-bar .w3-button {
-    padding: 16px;
-}
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Madadgaar</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-button {
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css"> 
+   <link rel="stylesheet" href="css/vendor.css"> 
+   <link rel="stylesheet" href="css/main.css">    
 
-button:hover {
-    opacity: 0.8;
-}
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-}
+	
 
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
+</head>
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
+<body id="top">
+	
+	<!-- header 
+   ================================================== -->
+   <header class="main-header">
+   	
+   	<div class="logo">
+		<!-- <a style="color:#f9da4f" href="index.html">Madadgaar</a> -->
+	   <h1 style="color:#f9da4f;" >Madadgaar</h1>
+	   </div> 
 
-.container {
-    padding: 100px;
-    margin: -200px 100px 0px 100px;
-    
-}
+	   <a class="menu-toggle" href="#"><span>Menu</span></a>   	
 
-span.psw {
-    float: center;
-    padding-top: 16px;
-    margin: 0px 0px 0px 220px;
-}
+   </header>
 
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box}
+   <!-- main navigation 
+   ================================================== -->
+   <nav id="menu-nav-wrap">
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
+   	<h3>Navigation</h3>   	
+		<ul class="nav-list">
+			<li><a class="smoothscroll" href="#intro" title="">Home</a></li>
+			<li><a class="smoothscroll" href="#features" title="">About us</a></li>
+			<li><a class="smoothscroll" href="#infos" title="">Explore Ngo's</a></li>
+			<li><a class="smoothscroll" href="#stats" title="">Stats</a></li>
+			<li><a class="smoothscroll" href="#pricing" title="">Emergency</a></li>					
+			<li><a class="smoothscroll" href="#testimonials" title="">News</a></li>	
+			<li><a class="smoothscroll" href="#download" title="">Team</a></li>	
+			<li><a class="smoothscroll" href="#subscribe" title="">Newsletter</a></li>			
+		</ul>
 
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
+		<h3>Join This Comunitty</h3>  
+		<p class="sponsor-text" > lets Join hands to help needy !
+			<span></span>
+			<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
+		</p>
 
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-}
+		<div class="action">
+			<a class="button" href=#>Sign Up Now</a>
+		</div>
 
-button {
-    background-color: black;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity:1;
-}
-
-.signupbtn {
-  float: left;
-  width: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}
-</style>
-<body>
-
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">MADADGAAR</a>
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#login" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REGISTER</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">REGISTER</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters </span><br>
-    <span class="w3-large">IDEATE , EXPLORE & CREATE</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE ORGANISATION</h3>
-  <p class="w3-center w3-large">Key features of our organisation</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Own workspace</p>
-      <p>The platform to kickstart your own startUp.</p>
-    </div>
-    <div class="w3-quarter">
-            <i class="fa fa-bullhorn" style="font-size:76px"></i>
-                  <p class="w3-large">Passion</p>
-      <p>passionate people unite and create their own workspace.</p>
-    </div>
-    <div class="w3-quarter">
-            <i class="fa fa-search" style="font-size:76px"></i>
-                  <p class="w3-large">Explore</p>
-      <p>Join community which is willing to work with you.</p>
-    </div>
-    <div class="w3-quarter">
-            <i class="fa fa-handshake-o" style="font-size:76px"></i>
-            <p class="w3-large">Ngo's</p>
-      <p>Common platform for Ngo's.</p>
-    </div>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!--login-->
-<div class="container" id="login">
-<h2 >Login Form </h2>
-
-<form action="profile.html" style="border:1px solid #ccc >
-  
-
-  
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-   <button type="submit">Login</button></a>
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  <br>
-<a href="">forgot password?</a>
-  <div >
-  </div>
-</div>
-</form>
-<br><br><br><br><br><br>
-
-          <!--register-->
+	</nav> <!-- /menu-nav-wrap -->
 
 
-<div class="container" style="padding: 90px 90px 90px 90px" id="work">
-    <h2 >REGISTER </h2>
-<div class="w3-container" style="padding:-220px 128px 16px,margin = 100px 100px 100px 100px" id="work">
-  
-  <form action="/action_page.php" style="border:1px solid #ccc">
-    
-    
-      <h3>Please fill in this form to create an account.</h3>
-      <hr>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-      
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-  
-      <div class="clearfix">
-        <button type="submit" class="signupbtn">Register</button>
-      </div>
-    </div>
-  </form>
-  
-  </div>
+	<!-- main content wrap
+   ================================================== -->
+   <div id="main-content-wrap">
 
 
-<!--contact us-->
+		<!-- main content wrap
+   	================================================== -->
+   	<section id="intro">
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px 100px 100px" id="contact">
-    <h3 class="w3-center">CONTACT US</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Hyderabad, India</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9999999999</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: helpdesk@madadgaar.org</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
-      </form>
-    </div>
-    <div class="w3-half">
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		   <!-- <div class="shadow-overlay"></div> -->
+		   
+		   <div class="row intro-content">
+		   	<div class="col-twelve">
 
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+				   <h1 class="animate-intro">मददगार</h1>
+				   <h3>The One & Only Platform for All Social Causes</h1>
+			  		
+					<h1 class="animate-intro">
+						
+					</h1>	
+					
+					<div class="buttons">
+						<a class="button stroke smoothscroll animate-intro" href="#features" title="">Explore</a>
+						<a class="button stroke smoothscroll animate-intro" href="#download" title="">Login</a>
+					</div>			
+					
+					
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
+					<!-- <img src="images/app-screenshot-big.jpg" alt="" class="animate-intro">   			 -->
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+			  	</div> <!-- /twelve --> 		   			
+		   </div> <!-- /row -->   
+
+		</section> <!-- /intro -->
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+		<!-- features
+   	================================================== -->
+		<section id="features">
 
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-}
+				<div class="row section-intro group animate-this">	
+						<div class="col-twelve with-bottom-line">
+		 
+							<h2 class="animate-intro">About us</h2>
+		 
+							<p style="font-family: 	Times New Roman" class="animate-intro">We are an organization that helps the NGO's , individuals , dreams and ambitions and help those who need just a little extra support. So far मददगार , and its tireless community  has helped over many individuals with free of cost needs  and we don't intend to stop. You can Donate online to raise this graph to new unimaginable height. Our aim is to create an inclusive society, where people with disabilities are accepted into the mainstream economy and social life. We believe that every single person is special and talented and is just looking for a chance to excel. </p>
+		 
+						</div>   		
+					</div>
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+			<div class="row section-intro group animate-this">	
+	   		<div class="col-twelve with-bottom-line">
+
+	   			<h2 class="">Features You'll Love.</h2>
+
+	   			<p class="lead">Here are the features of this platform</p>
+
+	   		</div>   		
+	   	</div>
+
+			<div class="row features-wrap">
+					     		
+				<div class="features-list block-1-3 block-s-1-2 block-tab-full">
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">01.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>Profile for Ngo's</h3>
+
+							<p> through this platform each and every ngo of this nation can have their own profile with its activities displayed in its timeline and much more , so that they are visible to every one.
+						   </p>
+						         		
+						</div> 	         	 
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">02.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>Issue Raising</h3>
+
+							<p>through this feature every one can raise any social issue through this platform where its will be published publicly and people who willing to solve this issue can work toghter to solve the  issue .
+						   </p>
+						         		
+						</div> 	         	 
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">03.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>Social Networking</h3>
+
+							<p>Every individual can signup here and have a profile subscribe to the available features and stay updated and contribute his part to the nation.
+						   </p>
+						         		
+						</div> 	         	 
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">04.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>Donations</h3>
+
+							<p>Any donations can be made through this platform and will be served to that particular neeedy.
+						   </p>
+						         		
+						</div> 	         	 
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">05.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>News Letter</h3>
+
+							<p>Stay Updated with all type of news across the country and also any news which an individual feel like to be publish can also be published.
+						   </p>
+						         		
+						</div> 	         	 
+
+					</div> <!-- /bgrid -->
+
+					<div class="bgrid feature animate-this">	
+
+						<span class="feature-count">06.</span>            
+
+					   <div class="feature-content">
+
+              	   	<h3>Social Events</h3>
+
+							<p>Hosting any kind of Camps like Health checkup , blood donation , books supply etc can be done and also call for volunteers help.
+						   </p>
+						         		
+						</div> 	 
+						
+						
+
+					</div> <!-- /bgrid -->
+
+				</div> <!-- /features-list --> 				
+
+			</div> <!-- /features-wrap -->
+
+			<center><h3>And More.....</h3></center>
+			<div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+
+			<div class="row section-intro group animate-this">	
+					<div class="col-twelve with-bottom-line">
+	 
+						<h2 class="animate-intro">Ngo's Near You</h2>
+					</div>   		
+				</div>
+
+			
+		</section> <!-- /features -->
+
+
+		<!-- infos
+   	================================================== -->
+   	<section id="infos">
+
+   		<div class="info-entry">
+
+   			<div class="half-grey"></div>
+
+   			<div class="row info-entry-content">
+
+   				<div class="media-wrap">
+   					<div class="media animate-this"  data-animate="fadeInRight">
+   						<img src="https://www.whatsuplife.in/hyderabad/blog/wp-content/uploads/2017/02/desire-society.jpg" alt="">
+   					</div>   				      				
+   				</div>
+
+   				<div class="col-six text-part">   				
+   					
+   					<h5 class="animate-this" data-animate="fadeInLeft">Nampally</h5>
+   					<h2 class="animate-this" data-animate="fadeInLeft">Desire Society</h2>
+
+   					<p class="animate-this" data-animate="fadeInLeft">DESIRE Society is a non-profit voluntary organization registered in year 2005 under Andhra Pradesh Societies Registration Act, 2001 (Act no 35 or, 2001) in Hyderabad. The organization is functioning with an objective of health development and well-being of children infected and affected with HIV and AIDS in India by having presence in Hyderabad, Bangalore, Mumbai, Gurugram (Delhi NCR) and Visakhapatnam. The main focus of the organization is to provide ICH – Institutional Care Homes for the children abandoned and orphaned by HIV/AIDS.
+
+							Where: LIG -156 , 2nd Road, KPHB Colony , Hyderabad
+							
+							Call: 04064581108, +919505117777
+							
+							Email: desiresociety@gmail.com, info@desiresociety.org
+							
+							Website: www.desiresociety.org</p>
+
+   					<a href="#" class="button animate-this" data-animate="fadeInLeft">Explore</a>
+   			 					
+   				</div>   				
+   				
+   			</div> <!-- /info-entry-content -->
+
+   		</div> <!-- /info-entry -->
+
+   		<div class="info-entry">
+
+   			<div class="half-grey"></div>
+
+   			<div class="row info-entry-content">
+   			
+	            <div class="media-wrap">
+	            	<div class="media animate-this" data-animate="fadeInLeft">
+	            		<div class="fluid-video-wrapper">
+		               <iframe src="https://www.whatsuplife.in/hyderabad/blog/wp-content/uploads/2017/02/carped-hyd.jpg" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+		            </div>
+	            	</div>   				
+	   			</div>
+
+	   			<div class="col-six text-part">   				
+   					
+   					<h5 class="animate-this" data-animate="fadeInRight">Medchal</h5>
+   					<h2 class="animate-this" data-animate="fadeInRight">Centre for Action Research and Peoples Development (CARPED)</h2>
+
+   					<p class="animate-this" data-animate="fadeInRight">CARPED Brings Sea Change Among Tribals in Andhra Pradesh, Telangana. At a young age when people run after lucrative careers, there are a few like Bharath Bhushan Mamidi who opted to serve people in remote tribal areas. He chose it as his career in order to make his life more purposeful. Bharath Bhushan Mamidi, founder Secretary of Centre for Action Research and People’s Development (CARPED) took voluntary retirement from his lucrative job in ICRISAT when he was just 21 years old, to pursue his passion of serving the tribal’s. He calls himself a change
+
+							Where: Kranthi Dhamam, 8-3-228/267, Rahamath Nagar, Yousufguda, , Hyderabad
+							
+							Call: +91(40)-65527969, 07660891479
+							
+							Email: info@carped.org, carpedindia@gmail.com
+							
+							Website:  www.carped.org</p>
+
+   					<a href="#" class="button animate-this" data-animate="fadeInRight">Explore</a>
+   			 					
+   				</div>
+
+   			</div> <!-- /info-entry-content -->
+
+   		</div> <!-- /info-entry -->
+
+	   </section> <!-- infos -->
+	   
+	   
+
+
+		<!-- stats
+   	================================================== -->
+   	<section id="stats" class="count-up">
+
+			<div class="row">
+				<div class="col-twelve">
+
+					<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-pencil-ruler"></i>
+							</div>
+
+							<h3 class="stat-count">110</h3>
+
+							<h5 class="stat-title">
+								Issues Solved
+							</h5>
+
+						</div> <!-- /stat -->					
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-location-user"></i>
+							</div>
+
+							<h3 class="stat-count">9050</h3>
+
+							<h5 class="stat-title">
+								Community
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-rewards-medal-1"></i>
+							</div>
+
+							<h3 class="stat-count">210</h3>
+
+							<h5 class="stat-title">
+								Registered Ngo's
+							</h5>
+
+						</div> <!-- /stat -->									
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-alien"></i>
+							</div>
+
+							<h3 class="stat-count">123</h3>
+
+							<h5 class="stat-title">
+								Events Hosted
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-coffee-mug"></i>
+							</div>
+
+							<h3 class="stat-count">1500</h3>
+
+							<h5 class="stat-title">
+								Individula profiles
+							</h5>
+
+						</div> <!-- /stat -->
+
+						<div class="bgrid stat">
+
+							<div class="icon-part">
+								<i class="icon-hourglass"></i>
+							</div>
+
+							<h3 class="stat-count">7200</h3>
+
+							<h5 class="stat-title">
+								Hours
+							</h5>
+
+						</div> <!-- /stat -->
+
+					</div> <!-- /stats-list -->
+
+				</div> <!-- /twelve -->
+			</div> <!-- /row -->
+
+		</section> <!-- /stats -->
+
+
+		<!-- pricing
+   	================================================== -->
+		<section id="pricing">
+
+	   	<div class="row section-intro animate-this">
+	   		<div class="col-twelve with-bottom-line">
+
+	   			<h2>Emergency Requirements</h2>
+
+	   			<p class="lead">This is the Emergency Requirement and if you are intrested  you can contribute to the following given details.</p>
+
+	   		</div>   		
+	   	</div>
+
+	   	<div class="row pricing-content">
+
+	         <div class="pricing-tables block-1-3  group">
+
+	            <div class="bgrid animate-this"> 
+
+	            	<div class="price-block">
+
+	            		<div class="top-part">
+
+		            		<h3 class="plan-title">Starter</h3>
+			               <p class="plan-price"><sup>₹</sup>4997</p>
+			               <p class="price-month">Per month</p>		             
+
+		            	</div>                
+
+		               <div class="bottom-part">
+
+		            		<ul class="features">
+			                  <li><strong>3GB</strong> Storage</li>
+			                  <li><strong>10GB</strong> Bandwidth</li>		                  
+			                  <li><strong>5</strong> Databases</li>		                  
+			                  <li><strong>30</strong> Email Accounts</li>
+			               </ul>
+
+			               <a class="button large" href="">Get Started</a>
+
+		            	</div>
+
+	            	</div>           	
+	                        
+				   </div> <!-- /bgrid -->
+
+	            <div class="bgrid animate-this">
+
+	            	<div class="price-block primary" data-info="popular">
+
+	            		<div class="top-part">
+
+		            		<h3 class="plan-title">Standard</h3>
+			               <p class="plan-price"><sup>₹</sup>9.99</p>
+			               <p class="price-month">Per month</p>							
+
+		            	</div>               
+
+		               <div class="bottom-part">
+
+		            		<ul class="features">
+			                  <li><strong>5GB</strong> Storage</li>
+			                  <li><strong>15GB</strong> Bandwidth</li>		                  
+			                  <li><strong>7</strong> Databases</li>		                  
+			                  <li><strong>40</strong> Email Accounts</li>
+			               </ul>
+
+			               <a class="button large" href="">Get Started</a>
+
+		            	</div>
+	            		
+	            	</div>            	                 
+
+				  </div> <!-- /bgrid -->
+
+	           <div class="bgrid animate-this">               
+
+	               <div class="price-block">
+
+	            		<div class="top-part">
+
+		            		<h3 class="plan-title">Premium</h3>
+			               <p class="plan-price"><sup>₹</sup>29.99</p>
+			               <p class="price-month">Per month</p>	                		               
+
+		            	</div> 
+		            	
+							<div class="bottom-part">
+
+		            		<ul class="features">
+			                  <li><strong>10GB</strong> Storage</li>
+			                  <li><strong>30GB</strong> Bandwidth</li>		                  
+			                  <li><strong>15</strong> Databases</li>		                  
+			                  <li><strong>60</strong> Email Accounts</li>
+			               </ul>
+
+			               <a class="button large" href="">Get Started</a>
+
+		            	</div>	            		                
+	            		
+	            	</div>                              
+
+				   </div> <!-- /bgrid -->		           
+
+	         </div> <!-- /pricing-tables --> 
+
+	      </div> <!-- /pricing-content --> 
+
+	   </section> <!-- Pricing -->
+
+
+	   <!-- testimonials
+   	================================================== -->
+	   <section id="testimonials">
+	   	<div class="row testimonial-content">
+	   		<div class="col-twelve">
+
+	   			<h2 class="h01 animate-this">
+                  Flash News.
+               </h2>
+
+					<div id="testimonial-slider" class="flexslider animate-this">
+						<ul class="slides">	
+						   <li>
+							  	<p>&ldquo;PM Modi Embraces Maldives As New Leader Takes Office, China Out Of Favour
+										The surprise defeat of pro-China strongman Abdulla Yameen has opened a window for India, the strategic outpost's traditional political partner. &rdquo;</p>
+							  	<p class="author-info">&mdash; NDTV</p>
+							</li>						
+							<li>
+								<p>&ldquo;IPL 2019: Released By Royal Challengers Bangalore, Brendon McCullum Has A Message &rdquo;</p>
+								<p class="author-info">&mdash;NDTV</p>
+							</li>						
+							<li>
+							  	<p>&ldquo;
+										Watch: Cheerleaders Go Wild In CPL 2018 As Shah Rukh Khan Puts On His Dancing Shoes
+										Updated: 17 August 2018 12:07 IST
+										Shah Rukh Khan was present at the Darren Sammy National Cricket Stadium in Gros Islet to witness his team, Trinbago Knight Riders, take on St Lucia Stars.&rdquo;</p>
+							  	<p class="author-info">&mdash; Dursarshan</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="flexslider-controls animate-this">
+					   <ul class="flex-control-nav">
+					      <li><img src="images/customer01.jpg" alt=""></li>
+					      <li><img src="images/customer02.jpg" alt=""></li>
+					      <li><img src="images/customer03.jpg" alt=""></li>
+					   </ul>
+					</div>
+						
+	   		</div>
+	   	</div>
+	   </section> <!-- /testimonials -->
+
+
+	   <!-- download
+	   ================================================== -->
+	   
+
+		   <div style="background-color:#ffffff" >
+
+				<div class="row section-intro animate-this">
+						<div class="col-twelve with-bottom-line">
+		 
+							<h2>Our Team</h2>
+		 
+							<p class="lead">We are a small team with lots of friends!
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+		 
+						</div>   		
+					</div>
+				
+				
+
+	   		<div class="">
+
+					<div class="row">
+							<div class="column">
+							  <div class="card">
+								<img src="data:image/jpeg;base64,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" alt="Jane" style="width:100%">
+								<div class="container">
+								  <h2>Abhishek Sonnakula</h2>
+								  <p class="title">Founder</p>
+								  <p>About me</p>
+								  <p>abhishek@madadgaar.org</p>
+								  <p><button class="button">Contact</button></p>
+								</div>
+							  </div>
+							</div>
+						  
+							<div class="column">
+							  <div class="card">
+								<img src="https://instagram.fhyd2-1.fna.fbcdn.net/vp/1605752cdc365929ff39e75b10204581/5C85B56E/t51.2885-19/s320x320/43914883_587042415047367_1543601586800951296_n.jpg" alt="Mike" style="width:100%">
+								<div class="container">
+								  <h2>Sparsha</h2>
+								  <p class="title">Art Director</p>
+								  <p>About me</p>
+								  <p>sparsha@madadgaar.org</p>
+								  <p><button class="button">Contact</button></p>
+								</div>
+							  </div>
+							</div>
+							<div class="column">
+							  <div class="card">
+								<img src="https://www.facebook.com/search/async/profile_picture/?fbid=100011402436466&width=72&height=72" alt="John" style="width:100%">
+								<div class="container">
+								  <h2>Shubham Yadav</h2>
+								  <p class="title">Ceo & Designer</p>
+								  <p>About me</p>
+								  <p>shubham@madadgaar.org</p>
+								  <p><button class="button">Contact</button></p>
+								</div>
+							  </div>
+							</div>
+						  </div>
+	   		</div>
+	   	</div>
+	   
+	   <!-- /download -->
+
+
+	   <!-- subscribe
+   	================================================== -->
+  		<section id="subscribe">
+               
+         <div class="row subscribe-content">
+            <div class="col-twelve">
+
+               <h2 class="h01 animate-this">Stay upto date, join our newsletter</h2>
+               <form id="mc-form" class="group" novalidate="true" autocomplete="off">
+
+               	<div class="row">
+               		<div class="col-eight tab-full left animate-this" data-animate="fadeInLeft">					
+			   				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter Your Email" required="">			   				
+			   			</div>
+
+				   		<div class="col-four tab-full right animate-this"  data-animate="fadeInRight">
+				   			<input type="submit" value="Get Notified" name="subscribe" class="button large">
+				   		</div>				   		
+               	</div> <!-- /row -->	
+
+               	<label for="mce-EMAIL" class="subscribe-message"></label>					
+					
+					</form>
+            
+            </div>
+         </div>
+                
+      </section> <!-- /subscribe -->		
+   
+   </div> <!-- /main-content-wrap -->
+
+
+   <!-- footer
+	================================================== -->
+	<footer id="main-footer">
+
+   	<div class="footer-social-wrap">  
+   		<div class="row">
+					
+	         <ul class="footer-social-list">
+	            <li><a href="#">
+	             	<i class="fa fa-facebook-square"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-twitter"></i>
+	            </a></li>
+              <li><a href="#">
+	              	<i class="fa fa-google-plus"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-pinterest"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-instagram"></i>
+	            </a></li>
+	            <li><a href="#">
+	              	<i class="fa fa-dribbble"></i>
+	            </a></li>
+	         </ul>
+		         
+			</div> 
+   	</div> <!-- /footer-social-wrap -->
+
+	   <div class="footer-info-wrap">
+
+	   	<div class="row footer-info">
+
+		  		<div class="col-four tab-full">
+		  			<h4><i class="icon-location-map-1"></i> Where to Find Us</h4>
+
+		  			<p>
+							Gowdavelly Medchal Mandal<br>
+							Hyderabad<br>
+							Telangana 502401 INDIA
+		         </p>
+		  		</div>
+
+		   	<div class="col-four tab-full collapse">
+	   			<h4><i class="icon-phone-incoming"></i> Get In Touch</h4>
+
+	   			<p>support@mdadgaar.org<br>
+				   	info@alphatech.co<br>
+				   	Phone: (+91) 9553911455	     
+				   </p>
+	   		</div>
+
+	   		<div class="col-four tab-full">
+	   			<h4><i class="icon-organization-hierarchy-3"></i> Company Links</h4>
+
+				   <ul class="footer-link-list">
+				   	<li><a href="#">Company Journal</a></li>
+				   	<li><a href="#">Product Support</a></li>
+				   	<li><a href="#">Privacy Policy</a></li>
+				   </ul>
+	   		</div>
+		   		
+		  	</div>
+	   </div> <!-- /footer-info-wrap -->
+	   	
+	   <div class="footer-bottom"> 
+
+	   	<div class="copyright">
+			    <span>Powered By <a href="http://www.hitam.org/">HITAM</a></span>
+		     	<span>© Copyright Madadgaar 2018.</span> 
+		     	<span>Design by <a href="#">Alpha Technologies</a></span>	         	
+		   </div>  		
+   	</div>
+	   	
+   </footer>   
+
+   <div id="go-top">
+		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+	</div>
+
+   <!-- preloader
+   ================================================== -->
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
+
+<style>
+		html {
+		  box-sizing: border-box;
+		}
+		
+		*, *:before, *:after {
+		  box-sizing: inherit;
+		}
+		
+		.column {
+		  float: left;
+		  width: 33.3%;
+		  margin-bottom: 16px;
+		  padding: 0 8px;
+		}
+		
+		@media screen and (max-width: 650px) {
+		  .column {
+			width: 100%;
+			display: block;
+		  }
+		}
+		
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+		
+		.container {
+		  padding: 0 16px;
+		}
+		
+		.container::after, .row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		
+		.title {
+		  color: grey;
+		}
+		
+		
+		
+		.button:hover {
+		  background-color: #555;
+		}
+		</style>
+
 </html>
